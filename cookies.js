@@ -42,7 +42,6 @@ var docCookies = {
 					the end parameter might not work as expected. A possible solution might be to convert the the
 					relative time to an absolute time. For instance, replacing the previous line with:
 					*/
-					//兼容ie浏览器，使用expires，不用max-age
 					sExpires = vEnd === Infinity ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; expires=" + (new Date(vEnd * 1e3 + Date.now())).toUTCString();
 					break;
 				case String:
